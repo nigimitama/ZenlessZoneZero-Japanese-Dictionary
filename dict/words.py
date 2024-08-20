@@ -44,8 +44,8 @@ LOCATIONS = [
 
 OTHERS = [
     Record(reading="おんどうき", word="音動機", category=Category.NOUN),
+    Record(reading="しきよぼうえいせん", word="式輿防衛戦", category=Category.NOUN),
     Record(reading="しきよ", word="式輿", category=Category.NOUN),
-    Record(reading="ぼうえいせん", word="式輿防衛戦", category=Category.NOUN),
     Record(reading="とうこうかえん", word="刀耕火炎", category=Category.NOUN),
 ]
 
