@@ -9,10 +9,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate Dictionary
+      - name: Generate Dictionary and Release Note
         run: python3 build.py
 
-      - name: GH Release
+      - name: Create Release
         uses: softprops/action-gh-release@v2.0.8
         if: startsWith(github.ref, 'refs/tags/')
         with:
