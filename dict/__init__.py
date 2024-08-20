@@ -9,6 +9,16 @@ class Category(Enum):
     OTHER = "その他"
 
 
+def category_win_to_mac(category: str):
+    """Mac用の品詞名にする
+
+    ref: https://support.apple.com/ja-jp/guide/japanese-input-method/jpim10226/mac
+    """
+    if category == Category.NOUN.name:
+        return "普通名詞"
+    return category
+
+
 @dataclass
 class Record:
     reading: str
@@ -20,11 +30,19 @@ class Record:
         if isinstance(self.category, Category):
             self.category: str = self.category.value
 
-    def to_line(self) -> str:
+    def to_line_win(self) -> str:
         """タブ区切りの1行に整形する"""
         return "\t".join([
             self.reading,
             self.word,
             self.category,
             self.comment
+        ])
+
+    def to_line_mac(self) -> str:
+        """タブ区切りの1行に整形する"""
+        return "\t".join([
+            self.reading,
+            self.word,
+            category_win_to_mac(self.category),
         ])

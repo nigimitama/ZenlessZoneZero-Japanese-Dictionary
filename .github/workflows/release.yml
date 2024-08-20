@@ -10,14 +10,16 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate Dictionary
-        run: python3 generate_dict.py
+        run: python3 build.py
 
       - name: GH Release
         uses: softprops/action-gh-release@v2.0.8
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: ZZZ-Japanese-Dict-Windows.txt
-          body_path: ./RELEASE_NOTE_GENERATED.md
+          files: |
+            zzz-dict-win.txt
+            zzz-dict-mac.txt
+          body_path: ./GENERATED_RELEASE_NOTE.md
           fail_on_unmatched_files: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
