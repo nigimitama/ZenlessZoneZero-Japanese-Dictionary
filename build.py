@@ -1,5 +1,5 @@
 from pathlib import Path
-from dict.words import WORDS, ITEMS, PARTIES, CHARACTERS
+from dict.words import RECORDS
 
 FILE_WIN = Path("./zzz-dict-win.txt")
 FILE_MAC = Path("./zzz-dict-mac.txt")
@@ -7,11 +7,10 @@ RELEASE_NOTE = Path("./GENERATED_RELEASE_NOTE.md")
 
 
 def generate_dict():
-    records = sum([WORDS, ITEMS, PARTIES, CHARACTERS], [])
     with open(FILE_WIN, "w", encoding="utf-8") as f:
-        f.writelines([f"{record.to_line_win()}\n" for record in records])
+        f.writelines([f"{record.to_line_win()}\n" for record in RECORDS])
     with open(FILE_MAC, "w", encoding="utf-8") as f:
-        f.writelines([f"{record.to_line_mac()}\n" for record in records])
+        f.writelines([f"{record.to_line_mac()}\n" for record in RECORDS])
 
 
 def generate_release_note():

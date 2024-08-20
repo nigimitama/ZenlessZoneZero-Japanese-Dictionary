@@ -1,9 +1,5 @@
 from dict import Record, Category
 
-WORDS = [
-    Record(reading="おんどうき", word="音動機", category=Category.NOUN),
-    Record(reading="とうこうかえん", word="刀耕火炎", category=Category.NOUN),
-]
 
 PARTIES = [
     Record(reading="じゃとや", word="邪兎屋", category=Category.NOUN),
@@ -29,9 +25,29 @@ ITEMS = [
 
 CHARACTERS = [
     Record(reading="ほしみみやび", word="星見雅", category=Category.NAME),
+    Record(reading="あさばはるまさ", word="浅羽悠真", category=Category.NAME),
     Record(reading="はるまさ", word="悠真", category=Category.NAME),
     Record(reading="ねこみやまな", word="猫宮又奈", category=Category.NAME),
     Record(reading="しゅえん", word="朱鳶", category=Category.NAME),
     Record(reading="ちんいー", word="青衣", category=Category.NAME),
     Record(reading="そうかく", word="蒼角", category=Category.NAME),
 ]
+
+
+LOCATIONS = [
+    Record(reading="しんえりーと", word="新エリー都", category=Category.LOCATION),
+    Record(reading="ぜろごうほろう", word="零号ホロウ", category=Category.LOCATION),
+    Record(reading="ろくぶんがい", word="六分街", category=Category.LOCATION),
+    Record(reading="こくがんがい", word="黒雁街", category=Category.LOCATION),
+]
+
+
+OTHERS = [
+    Record(reading="おんどうき", word="音動機", category=Category.NOUN),
+    Record(reading="しきよ", word="式輿", category=Category.NOUN),
+    Record(reading="ぼうえいせん", word="式輿防衛戦", category=Category.NOUN),
+    Record(reading="とうこうかえん", word="刀耕火炎", category=Category.NOUN),
+]
+
+
+RECORDS = sum([ITEMS, PARTIES, CHARACTERS, LOCATIONS, OTHERS], [])
