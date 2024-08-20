@@ -14,7 +14,7 @@ def category_win_to_mac(category: str):
 
     ref: https://support.apple.com/ja-jp/guide/japanese-input-method/jpim10226/mac
     """
-    if category == Category.NOUN.name:
+    if category == Category.NOUN.value:
         return "普通名詞"
     return category
 
