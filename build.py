@@ -20,7 +20,7 @@ def generate_release_note():
 ## 使用方法
 
 1. 下記のAssetsから `{FILE_WIN.name}` (Microsoft IME / Google IME用) あるいは `{FILE_MAC.name}` (MacOS用) をダウンロードしてください
-2. ご利用中のIMEに辞書をインポートしてください
+2. ダウンロードした `.txt` ファイルをご利用中のIMEにインポートしてください
 """.strip()
 
     with open(RELEASE_NOTE, "w", encoding="utf-8") as f:
