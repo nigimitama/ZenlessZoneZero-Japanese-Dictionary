@@ -1,0 +1,25 @@
+name: Generate Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate Dictionary
+        run: python3 generate_dict.py
+
+      - name: GH Release
+        uses: softprops/action-gh-release@v2.0.8
+        with:
+          files: ZZZ-Japanese-Dict-Windows.txt
+          body_path: ./RELEASE_NOTE_GENERATED.md
+          fail_on_unmatched_files: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
