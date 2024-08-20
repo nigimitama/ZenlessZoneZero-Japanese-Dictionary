@@ -18,9 +18,9 @@ def generate_release_note():
     contents = f"""
 [Zenless Zone Zero](https://zenless.hoyoverse.com/) の日本語入力用の辞書です。
 
-# 使用方法
+## 使用方法
 
-1. 下記のAssetsから `{FILE_WIN.name}` あるいは `{FILE_MAC.name}` をダウンロードしてください
+1. 下記のAssetsから `{FILE_WIN.name}` (Windows用) あるいは `{FILE_MAC.name}` (MacOS用) をダウンロードしてください
 2. ご利用中のIMEに辞書をインポートしてください
 """.strip()
 
