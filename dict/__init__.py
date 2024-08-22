@@ -5,8 +5,7 @@ from dataclasses import dataclass
 class Category(Enum):
     NOUN = "名詞"
     NAME = "人名"
-    LOCATION = "地名"
-    OTHER = "その他"
+    LOCATION = "地名その他"
 
 
 def category_win_to_mac(category: str):
@@ -16,6 +15,8 @@ def category_win_to_mac(category: str):
     """
     if category == Category.NOUN.value:
         return "普通名詞"
+    if category == Category.LOCATION.value:
+        return "地名"
     return category
 
 
@@ -23,7 +24,7 @@ def category_win_to_mac(category: str):
 class Record:
     reading: str
     word: str
-    category: str | Category = "名詞"  # category: Windows IMEだと「品詞」、Google IMEだと「カテゴリ」
+    category: str | Category  # category: Windows IMEだと「品詞」、Google IMEだと「カテゴリ」
     comment: str = ""
 
     def __post_init__(self) -> None:
