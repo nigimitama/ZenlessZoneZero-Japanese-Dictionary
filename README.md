@@ -6,4 +6,4 @@
 
 ## 使用方法
 
-[Releases](https://github.com/nigimitama/ZenlessZoneZero-Japanese-Dictionary/releases) の `.txt` ファイルをダウンロードし、お使いの IME （Microsoft IME や Google 日本語入力など）の辞書登録画面からインポートしてください
+[Releases](https://github.com/nigimitama/ZenlessZoneZero-Japanese-Dictionary/releases) の `.txt` ファイルをダウンロードし、お使いの IME （Microsoft IME や Google 日本語入力など）の辞書登録画面からインポートしてください。
