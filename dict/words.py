@@ -20,6 +20,9 @@ ITEMS = [
     Record(reading="こうばくされしもの", word="拘縛されし者", category=Category.NOUN),
     Record(reading="ぎょっこせいひょう", word="玉壺青氷", category=Category.NOUN),
     Record(reading="かしん", word="花信", category=Category.NOUN),
+    Record(reading="あられおつせいでん", word="あられ落つ星殿", category=Category.NOUN),
+    Record(reading="せいでん", word="星殿", category=Category.NOUN),
+    Record(reading="こくりゅう", word="刻流", category=Category.NOUN),
 ]
 
 
@@ -28,6 +31,8 @@ CHARACTERS = [
     Record(reading="あさばはるまさ", word="浅羽悠真", category=Category.NAME),
     Record(reading="はるまさ", word="悠真", category=Category.NAME),
     Record(reading="ねこみやまな", word="猫宮又奈", category=Category.NAME),
+    Record(reading="ねこみや", word="猫宮", category=Category.NAME),
+    Record(reading="まな", word="又奈", category=Category.NAME),
     Record(reading="しゅえん", word="朱鳶", category=Category.NAME),
     Record(reading="ちんいー", word="青衣", category=Category.NAME),
     Record(reading="そうかく", word="蒼角", category=Category.NAME),
@@ -47,6 +52,7 @@ OTHERS = [
     Record(reading="しきよぼうえいせん", word="式輿防衛戦", category=Category.NOUN),
     Record(reading="しきよ", word="式輿", category=Category.NOUN),
     Record(reading="とうこうかえん", word="刀耕火炎", category=Category.NOUN),
+    Record(reading="とうこう", word="刀耕", category=Category.NOUN),
 ]
 
 
