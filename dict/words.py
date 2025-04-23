@@ -36,6 +36,11 @@ CHARACTERS = [
     Record(reading="しゅえん", word="朱鳶", category=Category.NAME),
     Record(reading="ちんいー", word="青衣", category=Category.NAME),
     Record(reading="そうかく", word="蒼角", category=Category.NAME),
+    Record(reading="ふーふー", word="福福", category=Category.NAME),
+    Record(reading="ざお", word="照", category=Category.NAME),
+    Record(reading="いーしぇん", word="儀玄", category=Category.NAME),
+    Record(reading="ぱん", word="潘", category=Category.NAME),
+    Record(reading="いんふー", word="引壺", category=Category.NAME),
 ]
 
 
@@ -53,6 +58,8 @@ OTHERS = [
     Record(reading="しきよ", word="式輿", category=Category.NOUN),
     Record(reading="とうこうかえん", word="刀耕火炎", category=Category.NOUN),
     Record(reading="とうこう", word="刀耕", category=Category.NOUN),
+    Record(reading="きゅうと", word="旧都", category=Category.NOUN),
+    Record(reading="さんしょうかい", word="讃頌会", category=Category.NOUN),
 ]
 
 
