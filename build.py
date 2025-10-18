@@ -22,7 +22,10 @@ def generate_release_note():
 
 ## 使用方法
 
-1. 下記のAssetsから `{FILE_WIN.name}` (Microsoft IME / Google IME用) あるいは `{FILE_MAC.name}` (MacOS用) をダウンロードしてください
+1. 下記のAssetsからお使いのOSに合った辞書をダウンロードしてください
+    - `{FILE_WIN.name}`：Windows用 (Microsoft IME / Google IME)
+    - `{FILE_LIN.name}`：Linux用 (Mozc)
+    - `{FILE_MAC.name}`：MacOS用
 2. ダウンロードした `.txt` ファイルをご利用中のIMEにインポートしてください
 """.strip()
 

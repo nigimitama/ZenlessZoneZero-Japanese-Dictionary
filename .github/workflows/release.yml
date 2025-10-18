@@ -19,6 +19,7 @@ jobs:
         with:
           files: |
             zzz-dict-win.txt
+            zzz-dict-mozc.txt
             zzz-dict-mac.txt
           body_path: ./GENERATED_RELEASE_NOTE.md
           fail_on_unmatched_files: true
