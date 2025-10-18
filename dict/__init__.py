@@ -24,19 +24,20 @@ def category_win_to_mac(category: str):
 class Record:
     reading: str
     word: str
-    category: str | Category  # category: Windows IMEだと「品詞」、Google IMEだと「カテゴリ」
+    category: Category  # category: Windows IMEだと「品詞」、Google IMEだと「カテゴリ」と呼ばれるもの
+    category_str: str = ""
     comment: str = ""
 
     def __post_init__(self) -> None:
         if isinstance(self.category, Category):
-            self.category: str = self.category.value
+            self.category_str: str = self.category.value
 
     def to_line_win(self) -> str:
         """タブ区切りの1行に整形する"""
         return "\t".join([
             self.reading,
             self.word,
-            self.category,
+            self.category_str,
             self.comment
         ])
 
@@ -45,5 +46,5 @@ class Record:
         return "\t".join([
             self.reading,
             self.word,
-            category_win_to_mac(self.category),
+            category_win_to_mac(self.category_str),
         ])
