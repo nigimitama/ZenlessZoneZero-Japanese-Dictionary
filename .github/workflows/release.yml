@@ -1,7 +1,10 @@
 # git push origin [tag name] で自動的にリリースを作成する
 name: Generate Release
 
-on: push
+on:
+  push:
+    tags:
+      - 'v*'
 
 jobs:
   Actions:
