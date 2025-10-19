@@ -51,6 +51,7 @@ CHARACTERS = [
     Record(reading="こまのまなと", word="狛野真斗", category=Category.NAME),
     Record(reading="こまの", word="狛野", category=Category.NAME),
     Record(reading="まなと", word="真斗", category=Category.NAME),
+    Record(reading="ばんがく", word="盤岳", category=Category.NAME),
 ]
 
 
@@ -70,6 +71,7 @@ OTHERS = [
     Record(reading="しきよ", word="式輿", category=Category.NOUN),
     Record(reading="とうこうかえん", word="刀耕火炎", category=Category.NOUN),
     Record(reading="とうこう", word="刀耕", category=Category.NOUN),
+    Record(reading="ききょくきょうしゅうせん", word="危局強襲戦", category=Category.NOUN),
     Record(reading="きゅうと", word="旧都", category=Category.NOUN),
     Record(reading="さんしょうかい", word="讃頌会", category=Category.NOUN),
     Record(reading="いじょうしょうあく", word="異常掌握", category=Category.NOUN),
