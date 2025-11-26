@@ -51,7 +51,9 @@ CHARACTERS = [
     Record(reading="うきなみ", word="浮波", category=Category.NAME),
     Record(reading="いぇーしゅんがん", word="葉瞬光", category=Category.NAME),
     Record(reading="ようしゅんこう", word="葉瞬光", category=Category.NAME),
+    Record(reading="しゅんこう", word="瞬光", category=Category.NAME),
     Record(reading="ようしゃくえん", word="葉釈淵", category=Category.NAME),
+    Record(reading="しゃくえん", word="釈淵", category=Category.NAME),
     Record(reading="こまのまなと", word="狛野真斗", category=Category.NAME),
     Record(reading="こまの", word="狛野", category=Category.NAME),
     Record(reading="まなと", word="真斗", category=Category.NAME),
@@ -88,6 +90,8 @@ OTHERS = [
     Record(reading="せいめいちょう", word="青溟鳥", category=Category.NOUN),
     Record(reading="せきがぐみ", word="赤牙組", category=Category.NOUN),
     Record(reading="せいめいけん", word="青溟剣", category=Category.NOUN),
+    Record(reading="けんかん", word="剣棺", category=Category.NOUN),
+    Record(reading="じんぽう", word="陣法", category=Category.NOUN),
 ]
 
 
