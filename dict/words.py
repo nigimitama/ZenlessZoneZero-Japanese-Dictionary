@@ -70,6 +70,7 @@ LOCATIONS = [
     Record(reading="えいひちく", word="衛非地区", category=Category.LOCATION),
     Record(reading="ちょうきへい", word="澄輝坪", category=Category.LOCATION),
     Record(reading="だいちこうたい", word="大地溝帯", category=Category.LOCATION),
+    Record(reading="しゅうろうい", word="泅瓏囲", category=Category.LOCATION),
 ]
 
 
