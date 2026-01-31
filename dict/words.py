@@ -59,6 +59,10 @@ CHARACTERS = [
     Record(reading="まなと", word="真斗", category=Category.NAME),
     Record(reading="ばんがく", word="盤岳", category=Category.NAME),
     Record(reading="ふぉんどー", word="紅豆", category=Category.NAME),
+    Record(reading="りくこうしゅう", word="陸衡舟", category=Category.NAME),
+    Record(reading="こうしゅう", word="衡舟", category=Category.NAME),
+    Record(reading="なんぐうゆう", word="南宮羽", category=Category.NAME),
+    Record(reading="ゆう", word="羽", category=Category.NAME),
 ]
 
 
