@@ -59,6 +59,10 @@ CHARACTERS = [
     Record(reading="まなと", word="真斗", category=Category.NAME),
     Record(reading="ばんがく", word="盤岳", category=Category.NAME),
     Record(reading="ふぉんどー", word="紅豆", category=Category.NAME),
+    Record(reading="りくこうしゅう", word="陸衡舟", category=Category.NAME),
+    Record(reading="こうしゅう", word="衡舟", category=Category.NAME),
+    Record(reading="なんぐうゆう", word="南宮羽", category=Category.NAME),
+    Record(reading="ゆう", word="羽", category=Category.NAME),
 ]
 
 
@@ -70,6 +74,7 @@ LOCATIONS = [
     Record(reading="えいひちく", word="衛非地区", category=Category.LOCATION),
     Record(reading="ちょうきへい", word="澄輝坪", category=Category.LOCATION),
     Record(reading="だいちこうたい", word="大地溝帯", category=Category.LOCATION),
+    Record(reading="しゅうろうい", word="泅瓏囲", category=Category.LOCATION),
 ]
 
 
@@ -92,6 +97,8 @@ OTHERS = [
     Record(reading="せいめいけん", word="青溟剣", category=Category.NOUN),
     Record(reading="けんかん", word="剣棺", category=Category.NOUN),
     Record(reading="じんぽう", word="陣法", category=Category.NOUN),
+    Record(reading="りんかいすいえん", word="臨界推演", category=Category.NOUN),
+    Record(reading="すいえん", word="推演", category=Category.NOUN),
 ]
 
 
