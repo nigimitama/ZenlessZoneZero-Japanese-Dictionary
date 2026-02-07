@@ -97,6 +97,8 @@ OTHERS = [
     Record(reading="せいめいけん", word="青溟剣", category=Category.NOUN),
     Record(reading="けんかん", word="剣棺", category=Category.NOUN),
     Record(reading="じんぽう", word="陣法", category=Category.NOUN),
+    Record(reading="りんかいすいえん", word="臨界推演", category=Category.NOUN),
+    Record(reading="すいえん", word="推演", category=Category.NOUN),
 ]
 
 
