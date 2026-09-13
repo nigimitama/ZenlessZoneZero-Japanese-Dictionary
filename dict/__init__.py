@@ -10,7 +10,7 @@ class Category(Enum):
     LOCATION = "地名その他"
 
 
-def category_win_to_mac(category: str):
+def category_win_to_mac(category: str) -> str:
     """Mac用の品詞名にする
 
     ref: https://support.apple.com/ja-jp/guide/japanese-input-method/jpim10226/mac
