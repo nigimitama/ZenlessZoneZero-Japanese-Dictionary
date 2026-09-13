@@ -1,10 +1,18 @@
-# git push origin [tag name] で自動的にリリースを作成する
+# git push origin [tag name] または Actions タブから workflow_dispatch でリリースを作成する
 name: Generate Release
 
 on:
   push:
     tags:
       - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'タグ名 (例: v1.2.3)'
+        required: true
+
+permissions:
+  contents: write
 
 jobs:
   Actions:
@@ -13,13 +21,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Create and push tag
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag ${{ github.event.inputs.tag_name }}
+          git push origin ${{ github.event.inputs.tag_name }}
+
       - name: Generate Dictionary and Release Note
         run: python3 build.py
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/')
         with:
+          tag_name: ${{ github.event.inputs.tag_name || github.ref_name }}
           files: |
             zzz-dict-win.txt
             zzz-dict-mozc.txt
