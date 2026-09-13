@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from dict.words import RECORDS
 
 FILE_WIN = Path("./zzz-dict-win.txt")
@@ -7,7 +8,7 @@ FILE_MAC = Path("./zzz-dict-mac.txt")
 RELEASE_NOTE = Path("./GENERATED_RELEASE_NOTE.md")
 
 
-def generate_dict():
+def generate_and_save_dict() -> None:
     with open(FILE_LIN, "w", encoding="utf-8") as f:
         f.writelines([f"{record.to_line_win()}\n" for record in RECORDS])
     with open(FILE_WIN, "w", encoding="utf-16") as f:
@@ -16,7 +17,7 @@ def generate_dict():
         f.writelines([f"{record.to_line_mac()}\n" for record in RECORDS])
 
 
-def generate_release_note():
+def generate_and_save_release_note() -> None:
     contents = f"""
 [Zenless Zone Zero](https://zenless.hoyoverse.com/) の日本語入力用の辞書です。
 
@@ -34,5 +35,5 @@ def generate_release_note():
 
 
 if __name__ == "__main__":
-    generate_dict()
-    generate_release_note()
+    generate_and_save_dict()
+    generate_and_save_release_note()

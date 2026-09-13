@@ -1,14 +1,16 @@
-from enum import Enum
 from dataclasses import dataclass
+from enum import Enum
 
 
 class Category(Enum):
+    """Windows IMEだと「品詞」、Google IMEだと「カテゴリ」と呼ばれるもの"""
+
     NOUN = "名詞"
     NAME = "人名"
     LOCATION = "地名その他"
 
 
-def category_win_to_mac(category: str):
+def category_win_to_mac(category: str) -> str:
     """Mac用の品詞名にする
 
     ref: https://support.apple.com/ja-jp/guide/japanese-input-method/jpim10226/mac
@@ -24,7 +26,7 @@ def category_win_to_mac(category: str):
 class Record:
     reading: str
     word: str
-    category: Category  # category: Windows IMEだと「品詞」、Google IMEだと「カテゴリ」と呼ばれるもの
+    category: Category
     category_str: str = ""
     comment: str = ""
 
@@ -34,17 +36,8 @@ class Record:
 
     def to_line_win(self) -> str:
         """タブ区切りの1行に整形する"""
-        return "\t".join([
-            self.reading,
-            self.word,
-            self.category_str,
-            self.comment
-        ])
+        return f"{self.reading}\t{self.word}\t{self.category_str}\t{self.comment}"
 
     def to_line_mac(self) -> str:
         """タブ区切りの1行に整形する"""
-        return "\t".join([
-            self.reading,
-            self.word,
-            category_win_to_mac(self.category_str),
-        ])
+        return f"{self.reading}\t{self.word}\t{category_win_to_mac(self.category_str)}"
