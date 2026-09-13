@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from dict.words import RECORDS
 
 FILE_WIN = Path("./zzz-dict-win.txt")

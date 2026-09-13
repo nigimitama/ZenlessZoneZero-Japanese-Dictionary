@@ -1,5 +1,5 @@
-from enum import Enum
 from dataclasses import dataclass
+from enum import Enum
 
 
 class Category(Enum):
@@ -34,17 +34,8 @@ class Record:
 
     def to_line_win(self) -> str:
         """タブ区切りの1行に整形する"""
-        return "\t".join([
-            self.reading,
-            self.word,
-            self.category_str,
-            self.comment
-        ])
+        return f"{self.reading}\t{self.word}\t{self.category_str}\t{self.comment}"
 
     def to_line_mac(self) -> str:
         """タブ区切りの1行に整形する"""
-        return "\t".join([
-            self.reading,
-            self.word,
-            category_win_to_mac(self.category_str),
-        ])
+        return f"{self.reading}\t{self.word}\t{category_win_to_mac(self.category_str)}"

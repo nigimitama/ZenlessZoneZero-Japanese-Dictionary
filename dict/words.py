@@ -1,5 +1,4 @@
-from dict import Record, Category
-
+from dict import Category, Record
 
 PARTIES = [
     Record(reading="うんがくさん", word="雲嶽山", category=Category.NOUN),
@@ -110,5 +109,4 @@ OTHERS = [
     Record(reading="りんかいすいえん", word="臨界推演", category=Category.NOUN),
 ]
 
-
-RECORDS = sum([ITEMS, PARTIES, CHARACTERS, LOCATIONS, OTHERS], [])
+RECORDS = sum([ITEMS, PARTIES, CHARACTERS, LOCATIONS, OTHERS], [])  # noqa: RUF017
