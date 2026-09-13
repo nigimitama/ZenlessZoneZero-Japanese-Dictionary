@@ -1,0 +1,16 @@
+[project]
+name = "zenlesszonezero-japanese-dictionary"
+version = "0.1.0"
+description = "An user-defined IME dictionary of ZenlessZoneZero"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.414",
+    "ruff>=0.16.7",
+]
+
+[tool.ruff]
+line-length = 100
