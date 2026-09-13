@@ -3,6 +3,8 @@ from enum import Enum
 
 
 class Category(Enum):
+    """Windows IMEだと「品詞」、Google IMEだと「カテゴリ」と呼ばれるもの"""
+
     NOUN = "名詞"
     NAME = "人名"
     LOCATION = "地名その他"
@@ -24,7 +26,7 @@ def category_win_to_mac(category: str):
 class Record:
     reading: str
     word: str
-    category: Category  # category: Windows IMEだと「品詞」、Google IMEだと「カテゴリ」と呼ばれるもの
+    category: Category
     category_str: str = ""
     comment: str = ""
 
